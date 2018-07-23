@@ -6,8 +6,13 @@ const buildControl = ( props ) => (
 
     <div className={kelas.BuildControl}>
         <div className={kelas.Label}>{props.label}</div>
-        <button className={kelas.Less}>Less</button>
-        <button className={kelas.More} onClick={props.added}>More</button>
+        <button
+         className={kelas.Less}
+         onClick={props.removed}
+         disabled={props.disabled}>Less</button>
+        <button 
+        className={kelas.More}
+        onClick={props.added}>More</button>
     </div>
 );
 
